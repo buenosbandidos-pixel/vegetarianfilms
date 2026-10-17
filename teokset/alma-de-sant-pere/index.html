@@ -285,6 +285,12 @@ h2 { font-size: clamp(40px, 5vw, 64px); }
 .film-awards { padding-top: clamp(32px, 5vw, 56px); }
 .film-awards .awards { margin: 0; }
 .gallery { padding-block: clamp(48px, 7vw, 88px); }
+.laurels { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 14px 28px; color: var(--accent, #f2b33d); }
+.laurels li { display: flex; align-items: center; gap: 6px; }
+.laurels .lr { width: 18px; height: 40px; flex: none; }
+.laurels .lr.r { transform: scaleX(-1); }
+.laurels .lt { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1.15; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted, #8f8d86); max-width: 170px; }
+.laurels .lt b { color: var(--fg, #d9d8d3); font-weight: 600; font-size: 12px; }
 .fest { padding-block: clamp(32px, 5vw, 56px) 0; }
 .fest h2 { font-family: var(--mono); font-size: 13px; text-transform: uppercase; color: var(--muted); font-weight: 400; letter-spacing: 0; margin-bottom: 14px; }
 .fest ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 14px 32px; border-top: 1px solid var(--line); padding-top: 18px; }
@@ -342,7 +348,7 @@ h2 { font-size: clamp(40px, 5vw, 64px); }
 </header>
 <main id="top">
 <section class="wrap film-head"><a class="back mono up" href="/#teokset">← Kaikki teokset</a>
-<div class="meta mono"><span>2016</span>Elokuva</div><h1>Alma de Sant Pere</h1></section>
+<div class="meta mono"><span>2016</span>Elokuva</div><h1>Alma de Sant Pere</h1><ul class="laurels" aria-label="Festivaalit ja palkinnot"><li><svg class="lr" viewBox="0 0 40 80" aria-hidden="true"><path d="M30 76C12 64 6 44 10 22M10 22c-4 4-6 9-5 14M12 32c-5 2-8 7-8 12M14 42c-5 1-9 5-10 10M18 52c-5 0-9 3-11 8M23 61c-4-1-9 1-12 5M12 22c0-6 2-11 6-15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span class="lt"><b>Kilpailusarja</b><span>Beijing IFF</span><span>2017</span></span><svg class="lr r" viewBox="0 0 40 80" aria-hidden="true"><path d="M30 76C12 64 6 44 10 22M10 22c-4 4-6 9-5 14M12 32c-5 2-8 7-8 12M14 42c-5 1-9 5-10 10M18 52c-5 0-9 3-11 8M23 61c-4-1-9 1-12 5M12 22c0-6 2-11 6-15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></li><li><svg class="lr" viewBox="0 0 40 80" aria-hidden="true"><path d="M30 76C12 64 6 44 10 22M10 22c-4 4-6 9-5 14M12 32c-5 2-8 7-8 12M14 42c-5 1-9 5-10 10M18 52c-5 0-9 3-11 8M23 61c-4-1-9 1-12 5M12 22c0-6 2-11 6-15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span class="lt"><b>Virallinen valinta</b><span>IFFI Goa</span><span>2016</span></span><svg class="lr r" viewBox="0 0 40 80" aria-hidden="true"><path d="M30 76C12 64 6 44 10 22M10 22c-4 4-6 9-5 14M12 32c-5 2-8 7-8 12M14 42c-5 1-9 5-10 10M18 52c-5 0-9 3-11 8M23 61c-4-1-9 1-12 5M12 22c0-6 2-11 6-15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></li><li><svg class="lr" viewBox="0 0 40 80" aria-hidden="true"><path d="M30 76C12 64 6 44 10 22M10 22c-4 4-6 9-5 14M12 32c-5 2-8 7-8 12M14 42c-5 1-9 5-10 10M18 52c-5 0-9 3-11 8M23 61c-4-1-9 1-12 5M12 22c0-6 2-11 6-15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span class="lt"><b>Virallinen valinta</b><span>Pune IFF</span><span>2017</span></span><svg class="lr r" viewBox="0 0 40 80" aria-hidden="true"><path d="M30 76C12 64 6 44 10 22M10 22c-4 4-6 9-5 14M12 32c-5 2-8 7-8 12M14 42c-5 1-9 5-10 10M18 52c-5 0-9 3-11 8M23 61c-4-1-9 1-12 5M12 22c0-6 2-11 6-15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></li></ul></section>
 <section class="film-hero"><figure><img fetchpriority="high" src="/images/alma.jpg?v=5" alt="Kaksi naista punaisella sohvalla barcelonalaisen talon katolla. Kohtaus elokuvasta Alma de Sant Pere." style="object-position: 40% 40%" width="1600" height="670"></figure>
 <div class="acts wrap"><button type="button" class="watch" data-vimeo="1177727814" data-vimeo-h="6ef8f9dab8" data-video="/video/alma_traileri_fi.mp4" data-poster="/video/alma_trailer_poster.jpg"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 0l9 5-9 5z"/></svg>Traileri</button></div>
 </section>
