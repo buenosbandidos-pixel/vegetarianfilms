@@ -373,7 +373,7 @@ h2 { font-size: clamp(40px, 5vw, 64px); }
 (function () {
   var dlg = document.getElementById('player'), fr = document.getElementById('player-frame'), vd = document.getElementById('player-video');
   if (!dlg || !dlg.showModal) return;
-  // [2026-10-16] data-vimeo = Vimeo-upotus, data-video = sivuston oma mp4 (kieliversiot: build.py valitsee data-video-fi/en/es)
+  // [2026-10-16] data-vimeo = Vimeo-upotus, data-video = sivuston oma mp4 (kieliversiot: build.py valitsee kielen version). [2026-10-28] trailerit Vimeossa (vimeo_videos.json)
   document.querySelectorAll('[data-vimeo], [data-video]').forEach(function (b) {
     b.addEventListener('click', function (e) {
       e.preventDefault();
