@@ -51,6 +51,9 @@ a:hover { color: var(--paper); }
 header.top .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px; padding-block: 22px; }
 .wordmark { color: var(--yellow); text-decoration: none; font-weight: 800; font-size: 22px; letter-spacing: -0.01em; display: inline-flex; align-items: center; gap: 12px; }
 .wordmark img { width: 40px; height: 40px; object-fit: contain; }
+/* [2026-10-28] slogan logon alle (Jarmo: "nosta se logline sivun alkuun logon perään"; Juha: "tai alle") */
+.brand { display: flex; flex-direction: column; gap: 2px; }
+.brand .tagline { font-style: italic; font-size: 14px; color: var(--paper); opacity: .85; padding-left: 52px; }
 nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; }
 nav a { color: var(--paper); text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
 nav a:hover { color: var(--yellow); }
@@ -147,7 +150,6 @@ dialog.player .close { position: absolute; top: 0; right: 0; font: inherit; font
 /* [2026-10-17] pariton viimeinen kortti koko leveydelle (ei orpoa paikkaa) */
 .grid-feat .card:last-child:nth-child(odd) { grid-column: 1 / -1; }
 footer.site .legal { opacity: .55; font-size: 11px; }
-footer.site .tagline { font-style: italic; color: var(--muted); }
 .grid-feat .card:last-child:nth-child(odd) figure { aspect-ratio: 21 / 9; }
 .grid-feat .card { counter-increment: w; }
 .grid-feat .meta span:first-child::before { content: "0" counter(w) " · "; }
@@ -334,7 +336,7 @@ h2 { font-size: clamp(40px, 5vw, 64px); }
 
 <header class="top">
   <div class="wrap">
-    <a class="wordmark" href="/"><img src="/images/logo.png?v=3" alt="" width="40" height="40">vegetarian films</a>
+    <div class="brand"><a class="wordmark" href="/"><img src="/images/logo.png?v=3" alt="" width="40" height="40">vegetarian films</a><span class="tagline">There’s no need to ask where’s the beef</span></div>
     <button type="button" class="menu-btn mono up" aria-expanded="false" aria-controls="paavalikko">Valikko</button>
     <nav class="mono up" id="paavalikko" aria-label="Päävalikko">
       <a href="/#tuotannossa">Tuotannossa</a>
@@ -367,7 +369,7 @@ h2 { font-size: clamp(40px, 5vw, 64px); }
 </dialog>
 
 <footer class="site">
-  <div class="wrap mono"><span>© 2026 Vegetarian Films</span><span>Helsinki · Barcelona</span><span class="tagline">There’s no need to ask where’s the beef</span><span class="legal">Vegetarian Films on Kulttuurityöläisten Osuuskunta Adlerfeltin elokuvatuotannon nimi · Y-tunnus 2119897-6</span></div>
+  <div class="wrap mono"><span>© 2026 Vegetarian Films</span><span>Helsinki · Barcelona</span><span class="legal">Vegetarian Films on Kulttuurityöläisten Osuuskunta Adlerfeltin elokuvatuotannon nimi · Y-tunnus 2119897-6</span></div>
 </footer>
 
 <script>
